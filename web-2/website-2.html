@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/all.css">
+    <link rel="icon" href="img1.jfif">
+    <title>WROLD TOUR</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            min-height: 100vh;
+            background-image:linear-gradient(rgba(9,0,77,0.65),rgba(9,0,77,0.65)), url(background.png);
+            background-size: cover;
+            background-position: 40% 90% ;
+            padding: 10px 20px;
+            
+        }
+
+        .nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+            justify-content: space-between;
+            padding: 10px  0;
+           
+        }
+
+        .nav ul{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        
+            list-style: none;
+           
+            padding: 10px 20px;
+            margin-left: 20%;
+        
+
+        } 
+
+        .nav ul li{
+            padding: 10px 30px;
+           
+        }
+
+        
+
+        .nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            transition: all 0.5s linear;
+            padding: 10px 10px;
+        }
+
+        .nav ul li a:hover{
+            box-shadow: 0 0 5px #e91e63, 0 0 25px #e91e63, 0 0 50px #e91e63 ,0 0 100px #e91e63, 0 0 200px #e91e63;
+            border-radius: 5px;
+            transition: all 0.5s linear;
+            
+        }
+
+        .logo{
+            width:10%;
+            cursor: pointer;
+            margin-left: 5%;
+
+        }
+        .btn{
+            display: flex;
+            align-items: center;
+            padding: 8px 20px;
+            border: 0;
+            outline: 0;
+            border-radius: 5px;
+            background: #f5168d;
+            color: white;
+            margin-right: 8%;
+            cursor: pointer;
+            transition: all 1s;
+           
+        }
+
+        .btn:hover{
+            transform:scale(1.2);
+            transition: all 1s;
+            box-shadow: 0 0 5px #e91e63, 0 0 25px #e91e63, 0 0 50px #e91e63 ,0 0 100px #e91e63, 0 0 200px #e91e63;
+        }
+        .btn img{
+            width: 20px;
+            margin-right: 10px  ;
+        }
+
+        .content{
+            margin-top: 12%;
+
+            color: white;
+            max-width: 620px;
+            margin-left: 5%;
+           ;
+        }
+        .content h1{
+            font-size: 70px;
+            font-weight:bold;
+            line-height: 85px;
+            margin-bottom: 25px;
+          
+
+        }
+
+        .content form{
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 30px;
+           
+        }
+
+        .content form input{
+            border: 0;
+            outline: 0;
+        
+            width: 100%;
+            height: 20px;
+            font-size: 18px;
+
+           
+        }
+
+        .btn1{
+            border: 0;
+            outline: 0;
+            border-radius: 5px;
+            background: #f5168d;
+            color: white;
+            padding: 8px 20px;
+            cursor: pointer;
+        }
+
+        .fa-solid{
+            padding: 0 7px;
+        }
+
+
+        hr{
+            width: 100%;
+           height: 2px;
+           border: none;
+           background-color: #3498db;
+            animation: me 2s infinite linear alternate;
+        }
+     
+        @keyframes me {
+            0%{
+                
+            background-color: rgb(245, 245, 29);
+            }
+
+            25%{
+                
+                background-color: rgb(9, 239, 243);
+                }
+
+                50%{
+                
+                background-color: rgb(17, 248, 5);
+                }
+            
+                100%{
+                
+                background-color: #e91e63;
+                }
+    
+
+        }
+
+        
+              
+   
+
+       
+
+       
+
+        
+          
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <img src="logo.png" class="logo">
+            <uL> 
+                <li><a href="#"><i class="fa-solid fa-house-chimney-user fa-beat"></i></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-address-card fa-beat"></i>Contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-earth-americas fa-beat"></i>Place</a></li>
+                <li><a href="#"><i class="fa-solid fa-feather-pointed fa-beat"></i>About us</a></li>
+               
+            </uL>
+            
+            <button class="btn"><img src="icon.png">Booking</button>
+        </div>
+        <hr>
+        <div class="content">
+            <h1>Travel<br> The World</h1>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, quis eos! Quod neque amet tenetur vero expedita fugiat
+                 accusantium id dolorum, itaque, perferendis aliquid officia!</P>
+                 <form>
+                    <input type="text" placeholder="Country Name">
+                    <button type="submit"  class="btn1">Search</button>
+                 </form>
+        </div>
+    </div>
+
+ 
+
+</body>
+</html> 
